@@ -1,0 +1,164 @@
+body {
+  margin: 0 3em 0 3em;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.component {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boxes {
+  flex-direction: column;
+}
+
+.title {
+  color: grey;
+  font-weight: 400;
+}
+
+.productBox {
+  display: flex;
+  border: 1px solid grey;
+  box-shadow: 2px 2px 6px grey;
+  padding: 10px;
+  flex-wrap: wrap;
+  max-width: 500px;
+  color: grey;
+}
+
+.productGraphic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  img:nth-child(1) {
+    height: 15px;
+    padding: 0 30px 0 10px;
+  }
+  img:nth-child(2) {
+    height: 100px;
+    padding-right: 30px;
+  }
+}
+
+.productInfo {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  p {
+    border-bottom: 1px solid grey;
+    margin: 40px 0 40px 0;
+    padding: 10px 30px 10px 0;
+    &:first-child {
+      font-weight: bold
+    }
+  }
+}
+
+.productPrice {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  p {
+    border-bottom: 1px solid grey;
+    margin: 40px 0 40px 0;
+    padding: 10px 30px 10px 0;
+    &:first-child {
+      font-weight: bold
+    }
+  }
+}
+
+.productQty {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  p {
+    border-bottom: 1px solid grey;
+    margin: 40px 0 40px 0;
+    padding: 10px 30px 10px 0;
+    &:first-child {
+      font-weight: bold
+    }
+  }
+}
+
+.updateButton {
+  display: flex;
+  button {
+    background: black;
+    color: lightGrey;
+    border: 3px solid black;
+    padding: 3px 10px 3px 10px;
+  }
+}
+
+.btnCheckout1 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em 0 1em 0;
+  button {
+    background: black;
+    color: lightGrey;
+    border: 3px solid black;
+    padding: 3px 10px 3px 10px;
+    font-size: 10px;
+  }
+}
+
+.shipping {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f5f6fa;
+  border: 1px solid grey;
+  height: 30px;
+  width: 180px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.orderBox {
+  background: #f5f6fa;
+  border: 1px solid grey;
+  margin: 1em 0 1em 0;
+  max-width: 200px;
+}
+
+.cartTotals {
+  height: 20px;
+  font-size: 14px;
+  padding-left: 1.3em;
+  Line-height: 0.6em;
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  border-bottom: 1px solid grey;
+  margin: 0 1em 0 1em;
+}
+
+.grandTotal {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  margin: 0 1em 0 1em;
+}
+
+.btnCheckout2 {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 1em 0;
+  button {
+    background: black;
+    color: lightGrey;
+    border: 3px solid black;
+    padding: 3px 10px 3px 10px;
+  }
+}
