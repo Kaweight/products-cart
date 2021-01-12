@@ -1,9 +1,10 @@
 import React from 'react';
-import ProductsCart from './components/ProductsCart';
+import ProductsCart from './components/ProductsCart/ProductsCart';
+import products from './data/products';
 
 function App() {
   return (
-    <ProductsCart />
+    <ProductsCart product={products[0]}/>
   );
 }
 

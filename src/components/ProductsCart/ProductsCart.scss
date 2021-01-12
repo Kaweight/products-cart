@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .boxes {
@@ -25,7 +26,7 @@ body {
   box-shadow: 2px 2px 6px grey;
   padding: 10px;
   flex-wrap: wrap;
-  max-width: 500px;
+  max-width: 550px;
   color: grey;
 }
 
@@ -36,6 +37,7 @@ body {
   img:nth-child(1) {
     height: 15px;
     padding: 0 30px 0 10px;
+    cursor: pointer;
   }
   img:nth-child(2) {
     height: 100px;
@@ -87,11 +89,17 @@ body {
 
 .updateButton {
   display: flex;
+  max-height: 30px;
   button {
     background: black;
     color: lightGrey;
     border: 3px solid black;
     padding: 3px 10px 3px 10px;
+    cursor: pointer;
+    &:active {
+      opacity: 0.7;
+      transform: translateY(4px);
+    }
   }
 }
 
@@ -105,6 +113,11 @@ body {
     border: 3px solid black;
     padding: 3px 10px 3px 10px;
     font-size: 10px;
+    cursor: pointer;
+    &:active {
+      opacity: 0.7;
+      transform: translateY(4px);
+    }
   }
 }
 
@@ -138,7 +151,7 @@ body {
 
 .subtotal {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 14px;
   border-bottom: 1px solid grey;
   margin: 0 1em 0 1em;
@@ -146,7 +159,7 @@ body {
 
 .grandTotal {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 14px;
   margin: 0 1em 0 1em;
 }
@@ -160,5 +173,22 @@ body {
     color: lightGrey;
     border: 3px solid black;
     padding: 3px 10px 3px 10px;
+    cursor: pointer;
+    &:active {
+      opacity: 0.7;
+      transform: translateY(4px);
+    }
+  }
+}
+
+@media (max-width: 756px) {
+  .productBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 3em 0;
+    p {
+      margin: 10px 0 20px 0;
+      padding: 0 0 10px 0;
+    }
   }
 }
